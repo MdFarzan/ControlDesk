@@ -23,7 +23,9 @@ import {
   PieChart,
   Settings2,
   Images,
+  Gauge,
 } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 type Props = {
   children?: ReactNode | ReactNode[];
@@ -32,6 +34,10 @@ type Props = {
 };
 
 export default function AuthLayout({ children, module, page }: Props) {
+  const { pathname } = useLocation();
+
+  console.log(pathname.split("/").includes("/slider"));
+
   const data = {
     user: {
       name: "Md. Farzan",
@@ -41,18 +47,25 @@ export default function AuthLayout({ children, module, page }: Props) {
 
     navMain: [
       {
+        title: "Dashboard",
+        url: "/dashboard",
+        icon: Gauge,
+        // isActive: true,/`
+      },
+
+      {
         title: "Slider",
         url: "#",
         icon: Images,
-        isActive: true,
+        isActive: pathname.split("/").includes("slider"),
         items: [
           {
             title: "All slides",
-            url: "#",
+            url: "/slider",
           },
           {
-            title: "List",
-            url: "#",
+            title: "Add",
+            url: "/slider/add",
           },
         ],
       },
