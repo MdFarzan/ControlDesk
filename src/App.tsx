@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button"; // ✅
 import LoginPage from "./pages/LoginPage";
+import AuthLayout from "./components/layout/AuthLayout";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
     <>
-      <LoginPage />
+      <DashboardPage />
     </>
   );
 }
