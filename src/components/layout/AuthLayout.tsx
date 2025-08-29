@@ -145,7 +145,7 @@ export default function AuthLayout({ children, module, page }: Props) {
                   <>
                     <BreadcrumbSeparator className="hidden md:block" />
                     <BreadcrumbItem>
-                      <BreadcrumbPage>page</BreadcrumbPage>
+                      <BreadcrumbPage>{page}</BreadcrumbPage>
                     </BreadcrumbItem>
                   </>
                 )}
