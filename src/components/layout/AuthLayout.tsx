@@ -22,7 +22,7 @@ import {
   Map,
   PieChart,
   Settings2,
-  SquareTerminal,
+  Images,
 } from "lucide-react";
 
 type Props = {
@@ -34,33 +34,29 @@ type Props = {
 export default function AuthLayout({ children, module, page }: Props) {
   const data = {
     user: {
-      name: "shadcn",
-      email: "m@example.com",
+      name: "Md. Farzan",
+      email: "mdfarzan776@gmail.com",
       avatar: "/avatars/shadcn.jpg",
     },
 
     navMain: [
       {
-        title: "Playground",
+        title: "Slider",
         url: "#",
-        icon: SquareTerminal,
+        icon: Images,
         isActive: true,
         items: [
           {
-            title: "History",
+            title: "All slides",
             url: "#",
           },
           {
-            title: "Starred",
-            url: "#",
-          },
-          {
-            title: "Settings",
+            title: "List",
             url: "#",
           },
         ],
       },
-      {
+      /*       {
         title: "Models",
         url: "#",
         icon: Bot,
@@ -124,24 +120,7 @@ export default function AuthLayout({ children, module, page }: Props) {
             url: "#",
           },
         ],
-      },
-    ],
-    projects: [
-      {
-        name: "Design Engineering",
-        url: "#",
-        icon: Frame,
-      },
-      {
-        name: "Sales & Marketing",
-        url: "#",
-        icon: PieChart,
-      },
-      {
-        name: "Travel",
-        url: "#",
-        icon: Map,
-      },
+      }, */
     ],
   };
 
