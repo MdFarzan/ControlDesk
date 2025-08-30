@@ -5,7 +5,7 @@ import React from "react";
 export default function LoginPage() {
   return (
     <GuestLayout>
-      <section className="w-full h-[100vh] flex items-center justify-center">
+      <section className="w-full h-[100vh] flex items-center justify-center bg-[var(--bg-soft-1)]">
         <LoginForm />
       </section>
     </GuestLayout>

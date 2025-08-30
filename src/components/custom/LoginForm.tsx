@@ -55,7 +55,10 @@ export default function LoginForm() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full">
+        <Button
+          type="submit"
+          className="w-full bg-[var(--accent-bg-color)] hover:bg-[var(--accent-hover)]"
+        >
           Login
         </Button>
         <Button variant="outline" className="w-full">

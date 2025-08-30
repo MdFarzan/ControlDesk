@@ -74,6 +74,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --bg-soft-1: #f5f5fe;
+  --primary-bg-color: #3cc4ca;
+  --accent-bg-color: #3cc4ca;
+  --accent-hover: #35b1b6;
 }
 
 .dark {
