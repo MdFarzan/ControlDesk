@@ -64,7 +64,7 @@ function SingleLink({ item }: { item: any }) {
       {({ isActive }) => (
         <SidebarMenuButton
           data-active={isActive ? "true" : "false"}
-          className={isActive ? "bg-[#d3d3d3]!" : ""}
+          className={isActive ? "bg-[var(--accent-bg-color)]! text-white!" : ""}
         >
           <item.icon />
           <span>{item.title}</span>
@@ -93,7 +93,9 @@ function MultipleLink({ item }: { item: any }) {
                   <SidebarMenuSubButton
                     asChild
                     data-active={isActive ? "true" : "false"}
-                    className={isActive ? "bg-[#d3d3d3]!" : ""}
+                    className={
+                      isActive ? "bg-[var(--accent-bg-color)]! text-white!" : ""
+                    }
                   >
                     <span>{subItem.title}</span>
                   </SidebarMenuSubButton>
